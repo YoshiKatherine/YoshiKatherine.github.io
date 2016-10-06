@@ -1,0 +1,6 @@
+{
+  "name": "Yoshikatherine.GitHub.io",
+  "tagline": "",
+  "body": "lines (9 sloc)  409 Bytes\r\nvar videos = document.getElementsByClassName('video');\r\nif (navigator.mediaDevices && navigator.mediaDevices.getUserMedia)  {\r\n\r\n        navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {\r\n          \r\n            for (var x = 0; x < videos.length; x ++) {   \r\n                videos[x].src = window.URL.createObjectURL(stream);\r\n                videos[x].play();\r\n          }\r\n        });\r\n}\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
